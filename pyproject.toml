@@ -81,7 +81,8 @@ mypy_path = "src"
 asyncio_mode = "auto"
 testpaths = ["tests"]
 # Removed --cov-report=xml locally since I don't use CI coverage uploads
-addopts = "--cov=src/corridorkey --cov-report=term-missing"
+# Also using -v for more readable output when running tests locally
+addopts = "--cov=src/corridorkey --cov-report=term-missing -v"
 
 [tool.coverage.run]
 source = ["src/corridorkey"]

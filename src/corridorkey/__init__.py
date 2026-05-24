@@ -2,6 +2,8 @@
 
 This package provides utilities for managing cryptographic keys,
 access corridors, and authentication workflows.
+
+Note: Forked from nikopueringer/CorridorKey for personal learning/experimentation.
 """
 
 from importlib.metadata import PackageNotFoundError, version
@@ -13,5 +15,6 @@ except PackageNotFoundError:  # pragma: no cover
 
 __author__ = "CorridorKey Contributors"
 __license__ = "MIT"
+__upstream__ = "nikopueringer/CorridorKey"
 
-__all__ = ["__version__", "__author__", "__license__"]
+__all__ = ["__version__", "__author__", "__license__", "__upstream__"]

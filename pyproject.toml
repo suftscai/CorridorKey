@@ -83,7 +83,8 @@ testpaths = ["tests"]
 # Removed --cov-report=xml locally since I don't use CI coverage uploads
 # Also using -v for more readable output when running tests locally
 # Lowered fail-under threshold from upstream's 90 — still building out test coverage
-addopts = "--cov=src/corridorkey --cov-report=term-missing --cov-fail-under=50 -v"
+# Added -x so the test run stops on the first failure; faster feedback while learning
+addopts = "--cov=src/corridorkey --cov-report=term-missing --cov-fail-under=50 -v -x"
 
 [tool.coverage.run]
 source = ["src/corridorkey"]
